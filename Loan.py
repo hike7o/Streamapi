@@ -259,7 +259,7 @@ def main():
              'borderwidth': 2,
              'bordercolor': 'gray',
              'steps': [{'range': [0, 5], 'color': 'Green'},
-                       {'range': [5..1, 10], 'color': 'LimeGreen'},
+                       {'range': [5.01, 10], 'color': 'LimeGreen'},
                       # {'range': [49.5, 50.5], 'color': 'red'},
                        {'range': [10.01, 15], 'color': 'Orange'},
                        {'range': [15.01, 100], 'color': 'red'}],
