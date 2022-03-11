@@ -259,10 +259,10 @@ def main():
              'borderwidth': 2,
              'bordercolor': 'gray',
              'steps': [{'range': [0, 5], 'color': 'Green'},
-                       {'range': [6, 10], 'color': 'LimeGreen'},
+                       {'range': [5..1, 10], 'color': 'LimeGreen'},
                       # {'range': [49.5, 50.5], 'color': 'red'},
-                       {'range': [11, 15], 'color': 'Orange'},
-                       {'range': [16, 100], 'color': 'red'}],
+                       {'range': [10.01, 15], 'color': 'Orange'},
+                       {'range': [15.01, 100], 'color': 'red'}],
              'threshold': {'line': {'color': 'white', 'width': 10},
                            'thickness': 1,
                            'value': score}}))
@@ -284,13 +284,13 @@ def main():
 #            st.write("")
 #            st.write("")
             # Text for the gauge
-            if 0 <= score < 5:
+            if 0 <= score <= 5:
                 score_text = 'Credit score : EXCELLENT, Loan ACCEPTED'
                 st.success(score_text)
-            elif 25 <= score < 10:
+            elif 5 < score <= 10:
                 score_text = 'Credit score : GOOD, Loan ACCEPTED'
                 st.success(score_text)
-            elif 50 <= score < 15:
+            elif 11 <= score < 15:
                 score_text = 'Credit score : AVERAGE, Loan REFUSED'
                 st.warning(score_text)
             else :
